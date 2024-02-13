@@ -13,3 +13,25 @@ body {
     align-items: center;
     background-color: rgb(61,16,81) !important;
 }
+
+.question-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-card {
+    width: 30rem;
+}
+
+.btn-primary {
+    background-color: rgba(61,16,81,0.9) !important;
+    border-color: rgba(61,16,81,0.9) !important;
+}
+
+.quiz-answer-div:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}

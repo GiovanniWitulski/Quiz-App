@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="init()">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -38,13 +38,36 @@
     </nav>
 
     <div class="container">
-      <div class="card" style="width: 18rem">
-        <img src="img/bg b.png" class="card-img-top"/>
+      <div class="card quiz-card">
+        <img src="img/education.jpg" class="card-img-top">
         <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h5 class="card-title" id="questiontext">Frage</h5>
+          <div class="card quiz-answer-div mb-2" onclick="answer('answer1')">
+            <div class="card-body" id="answer1">
+              This is some text within a card body.
+            </div>
+          </div>
+          <div class="card quiz-answer-div mb-2" onclick="answer('answer2')">
+            <div class="card-body" id="answer2">
+              This is some text within a card body.
+            </div>
+          </div>
+          <div class="card quiz-answer-div mb-2" onclick="answer('answer3')">
+            <div class="card-body" id="answer3">
+              This is some text within a card body.
+            </div>
+          </div>
+          <div class="card quiz-answer-div mb-2" onclick="answer('answer4')">
+            <div class="card-body" id="answer4">
+              This is some text within a card body.
+            </div>
+          </div>
+          <div class="question-footer">
+            <span><b>1</b> von <b id="all-questions"></b> Fragen</span>
+            
+
+            <button type="button" class="btn btn-primary">Nächste Frage</button>
+          </div>
         </div>
       </div>
     </div>
