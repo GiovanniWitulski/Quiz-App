@@ -26,12 +26,11 @@ body {
     width: 30rem;
 }
 
-.btn-primary {
-    background-color: rgba(61,16,81,0.9) !important;
-    border-color: rgba(61,16,81,0.9) !important;
-}
-
 .quiz-answer-div:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-succsess, .bg-danger {
+    color: white;
 }

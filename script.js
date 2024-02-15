@@ -62,10 +62,16 @@ function showQuestion() {
 function answer(selection) {
     let question = questions[currentQuestion];
     let selectetAnswer = selection.slice(-1);
+    let idOfRightAnswer = `answer${question['right-answer']}`;
     
     if (selectetAnswer == question['right-answer']) {
         console.log('richtige Antwort');
+        document.getElementById(selection).parentNode.classList.add('bg-success');
+
     } else {
         console.log('falsche Antwort');
+        document.getElementById(selection).parentNode.classList.add('bg-danger');
+        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
     }
+    document.getElementById('nextBtn').disabled = false;
 }
