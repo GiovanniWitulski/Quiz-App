@@ -61,6 +61,10 @@ function showQuestion() {
 
         document.getElementById('headerImg').src = 'img/trophy.png';
     } else {
+        let percent = (currentQuestion + 1) / questions.length;
+        percent = Math.round(percent * 100);
+        document.getElementById('progressBar').innerHTML = `${percent} %`;
+        document.getElementById('progressBar').style = `width: ${percent}%`;
         let question = questions[currentQuestion];
 
         document.getElementById('question-number').innerHTML = currentQuestion + 1;
