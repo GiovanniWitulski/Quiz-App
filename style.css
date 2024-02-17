@@ -34,3 +34,17 @@ body {
 .bg-succsess, .bg-danger {
     color: white;
 }
+
+.widht-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.end-screen-headline {
+    font-size: 38px;
+    margin-bottom: 26px;
+    margin-top: 10px;
+}
