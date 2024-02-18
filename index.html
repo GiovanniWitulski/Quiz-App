@@ -21,6 +21,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
+
   <body onload="init()">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -34,9 +36,17 @@
       <div class="card quiz-card">
         <img src="img/education.jpg" id="headerImg" class="card-img-top">
 
+        <div class="progress">
+          <div class="progress-bar" id="progressBar" role="progressbar" style="width: 0%;">0%</div>
+        </div>
+
         <div class="card-body" id="endScreen" style="display: none;">
           <div class="text-center end-screen-headline">Quiz beendet!</div>
-          <div class="text-center">Du hast <b id="amountOfRightQuestions"></b> von <b id="amountOfQuestions"></b> Fragen beantwortet</div>
+          <div class="text-center">Du hast <b id="amountOfRightQuestions"></b> von <b id="amountOfQuestions"></b> Fragen richtig beantwortet</div>
+
+          <div class="restart-game-btn-div">
+            <button onclick="restartGame()" type="button" id="" class="btn btn-primary">Erneut spielen</button>
+          </div>
         </div>
 
         <div class="card-body" id="questionBody">
